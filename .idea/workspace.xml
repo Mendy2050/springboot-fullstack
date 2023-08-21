@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="springboot backend">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/backend-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/backend-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/backend-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
