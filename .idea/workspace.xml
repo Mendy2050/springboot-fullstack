@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="springboot backend">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/backend-ci.yml" afterDir="false" />
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="break existsPersonWithEmail">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/PingPongController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692627138206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add build workflow">
+      <created>1692637728581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692637728582</updated>
+    </task>
+    <task id="LOCAL-00007" summary="break existsPersonWithEmail">
+      <created>1692640107975</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692640107975</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +176,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add build workflow and change backend-ci.yml" />
     <MESSAGE value="springboot backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot backend" />
+    <MESSAGE value="add build workflow" />
+    <MESSAGE value="break existsPersonWithEmail" />
+    <option name="LAST_COMMIT_MESSAGE" value="break existsPersonWithEmail" />
   </component>
 </project>

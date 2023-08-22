@@ -13,17 +13,15 @@
     <groupId>com.mendy</groupId>
     <artifactId>mendy-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <organization>
-        <name>mendy2050</name>
-        <!--	<url>https://mendy2050.com</url>-->
-    </organization>
+
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>17</java.version>
-
         <tomcat.http.port>8080</tomcat.http.port>
-
+        <docker.username>mendy2050</docker.username>
+        <docker.image.name>mendy-api</docker.image.name>
+        <docker.image.tag/>
     </properties>
 
     <dependencies>
@@ -93,8 +91,9 @@
             <scope>test</scope>
         </dependency>
 
-
     </dependencies>
+
+
 
     <build>
         <plugins>
@@ -190,7 +189,7 @@
                     </from>
 
                     <to>
-                        <image>docker.io/${organization.name}/${project.artifactId}:${project.version}</image>
+                        <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
                         <tags>
                             <tag>latest</tag>
                         </tags>
