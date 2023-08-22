@@ -78,6 +78,8 @@ jobs:
           git commit -m "Update Dockerrun.aws.json docker image with new tag ${{steps.build-number.outputs.BUILD_NUMBER}}"
           git remote set-url origin https://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@github.com/mendy2050/springboot-fullstack.git
           git push origin main
+          123
+          
           
           
           
