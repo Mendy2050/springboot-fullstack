@@ -98,6 +98,7 @@ jobs:
           version_description: ${{ github.SHA }}
           region: ${{ secrets.EB_REGION }}
           deployment_package: backend/Dockerrun.aws.json
+          wait_for_environment_recovery: false
 
       - name: Send Slack Message
         run: >
