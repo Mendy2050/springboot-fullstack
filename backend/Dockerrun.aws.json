@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "mendy-api",
-      "image": "mendy2050/mendy-api:24.08.2023.13.38.19",
+      "image": "mendy2050/mendy-api:29.08.2023.06.43.59",
       "essential": true,
       "memory": 512,
       "portMappings": [
