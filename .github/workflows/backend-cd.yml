@@ -34,11 +34,11 @@ jobs:
 
       - name: Print github.sha
         run:
-          echo "Current SHA: ${{ github.sha }}"
+          echo "Current SHA: ${{ github.SHA }}"
 
       - name: Slack commit message and sha
         run: >
-          curl -X POST -H 'Content-type: application/json' --data '{"text":":github: https://github.com/Mendy2050/springboot-fullstack/commit/${{github.sha}} - ${{ github.event.head_commit.message }}"}' ${{ secrets.SLACK_WEBHOOK_URL }}
+          curl -X POST -H 'Content-type: application/json' --data '{"text":":github: https://github.com/Mendy2050/springboot-fullstack/commit/${{github.SHA}} - ${{ github.event.head_commit.message }}"}' ${{ secrets.SLACK_WEBHOOK_URL }}
 
 
       - name: Send Slack Message
