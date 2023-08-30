@@ -3,20 +3,17 @@ package com.mendy.customer;
 import com.mendy.exception.DuplicateResourceException;
 import com.mendy.exception.RequestValidationException;
 import com.mendy.exception.ResourceNotFoundException;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 /**
@@ -56,7 +53,7 @@ class CustomerServiceTest {
     void canGetCustomer() {
         //GIVEN
         Long id =10l;
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //When
@@ -89,7 +86,7 @@ class CustomerServiceTest {
 
         when(customerDao.existsPersonWithEmail(email)).thenReturn(false);
 
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19, Gender.MALE);
 
 
         //When
@@ -116,7 +113,7 @@ class CustomerServiceTest {
         //GIVEN
         String email = "alex@gmail.com";
         when(customerDao.existsPersonWithEmail(email)).thenReturn(true);
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19, Gender.MALE);
 
         //When
 
@@ -174,7 +171,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -214,7 +211,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -252,7 +249,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -293,7 +290,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -330,7 +327,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -360,7 +357,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest

@@ -5,6 +5,7 @@ import com.github.javafaker.Name;
 import com.mendy.customer.Customer;
 import com.mendy.customer.CustomerRegistrationRequest;
 import com.mendy.customer.CustomerUpdateRequest;
+import com.mendy.customer.Gender;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -44,7 +45,9 @@ public class CustomerIT {
         String email = fakerName.lastName() + UUID.randomUUID() + "@foobarhello123.com";
         int age = RANDOM.nextInt(1, 100);
 
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age);
+        Gender gender = age % 2 == 0 ? Gender.MALE : Gender.FEMALE;
+
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age, gender);
 
         //2. send a post request to our API
         webTestClient.post()
@@ -69,7 +72,7 @@ public class CustomerIT {
                 .getResponseBody();
 
         //4. make sure that customer is present
-        Customer expectedCustomer = new Customer(name, email, age);
+        Customer expectedCustomer = new Customer(name, email, age, gender);
         assertThat(allCustomers)
                 .usingRecursiveFieldByFieldElementComparatorIgnoringFields("id")
                 .contains(expectedCustomer);
@@ -104,8 +107,9 @@ public class CustomerIT {
         String name = fakerName.fullName();
         String email = fakerName.lastName() + UUID.randomUUID() + "@foobarhello123.com";
         int age = RANDOM.nextInt(1, 100);
+        Gender gender = age % 2 == 0 ? Gender.MALE : Gender.FEMALE;
 
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age, gender);
 
         //2. send a post request to our API
         webTestClient.post()
@@ -164,8 +168,9 @@ public class CustomerIT {
         String name = fakerName.fullName();
         String email = fakerName.lastName() + UUID.randomUUID() + "@foobarhello123.com";
         int age = RANDOM.nextInt(1, 100);
+        Gender gender = age % 2 == 0 ? Gender.MALE : Gender.FEMALE;
 
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest(name, email, age, gender);
 
         //2. send a post request to our API
         webTestClient.post()
@@ -222,7 +227,7 @@ public class CustomerIT {
                 .returnResult()
                 .getResponseBody();
 
-        Customer expected = new Customer(id,newName,email,age);
+        Customer expected = new Customer(id,newName,email,age, gender);
 
         assertThat(updatedCustomer).isEqualTo(expected);
 

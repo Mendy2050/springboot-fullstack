@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="new change to .gitignore">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" afterDir="false" />
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to Deploy to Elastic Beanstalk">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mendy-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerJDBCDataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerJDBCDataAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerListDataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerListDataAccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJDBCDataAccessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJDBCDataAccessServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJPADataAccessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJPADataAccessServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRowMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRowMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/journey/CustomerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/journey/CustomerIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +132,8 @@
       <workItem from="1692968729496" duration="41000" />
       <workItem from="1692969174380" duration="314000" />
       <workItem from="1692975252242" duration="14000" />
-      <workItem from="1693290199565" duration="795000" />
+      <workItem from="1693290199565" duration="5916000" />
+      <workItem from="1693325083252" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>
@@ -198,7 +212,49 @@
       <option name="project" value="LOCAL" />
       <updated>1692881845350</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="send slack message with commit and sha to cd workflow">
+      <created>1693291122999</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693291122999</updated>
+    </task>
+    <task id="LOCAL-00013" summary="verify sha">
+      <created>1693293864888</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693293864888</updated>
+    </task>
+    <task id="LOCAL-00014" summary="change sha to SHA">
+      <created>1693294591775</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693294591775</updated>
+    </task>
+    <task id="LOCAL-00015" summary="change sha to SHA 2">
+      <created>1693294796704</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1693294796705</updated>
+    </task>
+    <task id="LOCAL-00016" summary="change sha to SHA 3">
+      <created>1693294977054</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1693294977054</updated>
+    </task>
+    <task id="LOCAL-00017" summary="change to Deploy to Elastic Beanstalk">
+      <created>1693296187264</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1693296187264</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +282,13 @@
     <MESSAGE value="new changes-cd" />
     <MESSAGE value="add counter to PingPongController" />
     <MESSAGE value="new change to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="new change to .gitignore" />
+    <MESSAGE value="send slack message with commit and sha to cd workflow" />
+    <MESSAGE value="verify sha" />
+    <MESSAGE value="change sha to SHA" />
+    <MESSAGE value="change sha to SHA 2" />
+    <MESSAGE value="change sha to SHA 3" />
+    <MESSAGE value="change to Deploy to Elastic Beanstalk" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to Deploy to Elastic Beanstalk" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

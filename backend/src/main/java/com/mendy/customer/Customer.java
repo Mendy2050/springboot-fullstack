@@ -40,24 +40,38 @@ public class Customer {
     @Column( nullable = false)
     private Integer age;
 
-    public Customer(Long id, String name, String email, Integer age) {
+    @Column( nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
+
+    public Customer(Long id, String name, String email, Integer age, Gender gender) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.age = age;
+        this.gender = gender;
     }
 
 
-    public Customer(String name, String email, Integer age) {
+    public Customer(String name, String email, Integer age, Gender gender) {
         this.name = name;
         this.email = email;
         this.age = age;
+        this.gender = gender;
     }
 
 
     public Customer() {
     }
 
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
 
     public Long getId() {
         return id;
@@ -101,7 +115,8 @@ public class Customer {
         if (id != null ? !id.equals(customer.id) : customer.id != null) return false;
         if (name != null ? !name.equals(customer.name) : customer.name != null) return false;
         if (email != null ? !email.equals(customer.email) : customer.email != null) return false;
-        return age != null ? age.equals(customer.age) : customer.age == null;
+        if (age != null ? !age.equals(customer.age) : customer.age != null) return false;
+        return gender == customer.gender;
     }
 
     @Override
@@ -110,9 +125,9 @@ public class Customer {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (age != null ? age.hashCode() : 0);
+        result = 31 * result + (gender != null ? gender.hashCode() : 0);
         return result;
     }
-
 
     @Override
     public String toString() {
@@ -121,6 +136,7 @@ public class Customer {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +
+                ", gender=" + gender +
                 '}';
     }
 }
