@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "mendy-api",
-      "image": "mendy2050/mendy-api:30.08.2023.11.12.29",
+      "image": "mendy2050/mendy-api:latest",
       "essential": true,
       "memory": 512,
       "portMappings": [
@@ -15,7 +15,7 @@
       "environment": [
         {
           "name": "SPRING_DATASOURCE_URL",
-          "value": "jdbc:postgresql://awseb-e-visvn56kpq-stack-awsebrdsdatabase-gachp7gx2wzv.c9titcyqi3vf.eu-west-1.rds.amazonaws.com:5432/customer"
+          "value": "jdbc:postgresql://awseb-e-c322a9uyqe-stack-awsebrdsdatabase-nmdhtdxltegv.c9titcyqi3vf.eu-west-1.rds.amazonaws.com:5432/customer"
         }
       ]
     },

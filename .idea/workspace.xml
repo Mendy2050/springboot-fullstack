@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to Deploy to Elastic Beanstalk">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" afterDir="false" />
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to Deploy to Elastic Beanstalk 09.04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerrun.aws.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/React/src/services/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/services/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerrun.aws.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -127,7 +119,7 @@
       <workItem from="1692969174380" duration="314000" />
       <workItem from="1692975252242" duration="14000" />
       <workItem from="1693290199565" duration="5916000" />
-      <workItem from="1693325083252" duration="16280000" />
+      <workItem from="1693325083252" duration="27369000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>
@@ -248,7 +240,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693296187264</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="change to Deploy to Elastic Beanstalk 09.04">
+      <created>1693834003224</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834003224</updated>
+    </task>
+    <task id="LOCAL-00019" summary="change to Deploy to Elastic Beanstalk 09.04">
+      <created>1693834037455</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834037455</updated>
+    </task>
+    <task id="LOCAL-00020" summary="change to Deploy to Elastic Beanstalk 09.04">
+      <created>1693834428400</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834428400</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +295,8 @@
     <MESSAGE value="change sha to SHA 2" />
     <MESSAGE value="change sha to SHA 3" />
     <MESSAGE value="change to Deploy to Elastic Beanstalk" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to Deploy to Elastic Beanstalk" />
+    <MESSAGE value="change to Deploy to Elastic Beanstalk 09.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to Deploy to Elastic Beanstalk 09.04" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
