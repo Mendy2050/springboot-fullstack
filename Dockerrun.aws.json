@@ -26,7 +26,7 @@
       "name": "mendy-api-react",
       "image": "mendy2050/mendy-api-react:latest",
       "essential": true,
-      "memory": 512,
+      "memory": 256,
       "portMappings": [
         {
           "hostPort": 80,
