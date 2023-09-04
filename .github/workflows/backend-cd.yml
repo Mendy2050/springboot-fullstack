@@ -58,7 +58,10 @@ jobs:
 
       - name: Set build number
         id: build-number
-        run: echo "BUILD_NUMBER=$(date '+%d.%m.%Y.%H.%M.%S')" >> $GITHUB_OUTPUTgit
+        run: echo "::set-output name=BUILD_NUMBER::$(date '+%d.%m.%Y.%H.%M.%S')"
+
+      - name: Use build number
+        run: echo "Build number is ${{ steps.build-number.outputs.BUILD_NUMBER }}"
 
       - name: Send Slack Message
         run: >
