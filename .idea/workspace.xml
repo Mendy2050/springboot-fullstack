@@ -5,23 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to Deploy to Elastic Beanstalk">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/backend-cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerJDBCDataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerJDBCDataAccessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerListDataAccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerListDataAccessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJDBCDataAccessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJDBCDataAccessServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJPADataAccessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerJPADataAccessServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRowMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerRowMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/customer/CustomerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/mendy/journey/CustomerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mendy/journey/CustomerIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerrun.aws.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/React/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/services/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/services/client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +127,7 @@
       <workItem from="1692969174380" duration="314000" />
       <workItem from="1692975252242" duration="14000" />
       <workItem from="1693290199565" duration="5916000" />
-      <workItem from="1693325083252" duration="1242000" />
+      <workItem from="1693325083252" duration="16280000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>

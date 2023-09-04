@@ -27,6 +27,18 @@ services:
       - db
     restart: unless-stopped
 
+  mendy-api-react:
+    container_name: mendy-api-react
+    image: mendy2050/mendy-api-react
+    build:
+      context: frontend/React
+      args:
+        api_base_url: http://localhost:8088
+    ports:
+      - "3000:5173"
+    depends_on:
+      - mendy-api
+    restart: unless-stopped
 
   pgadmin:
     container_name: pgadmin
