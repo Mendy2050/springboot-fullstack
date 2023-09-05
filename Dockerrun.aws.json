@@ -24,7 +24,7 @@
 
     {
       "name": "mendy-api-react",
-      "image": "mendy2050/mendy-api-react:05.09.2023.13.36.17",
+      "image": "mendy2050/mendy-api-react:20502050",
       "essential": true,
       "memory": 256,
       "portMappings": [

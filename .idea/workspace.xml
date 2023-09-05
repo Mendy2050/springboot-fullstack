@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to frontend-react-cd.yml 6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="frontend-react-cd.yml 7">
       <change beforePath="$PROJECT_DIR$/Dockerrun.aws.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +118,7 @@
       <workItem from="1692969174380" duration="314000" />
       <workItem from="1692975252242" duration="14000" />
       <workItem from="1693290199565" duration="5916000" />
-      <workItem from="1693325083252" duration="39813000" />
+      <workItem from="1693325083252" duration="40258000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>
@@ -317,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693923648612</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="frontend-react-cd.yml 7">
+      <created>1693927488191</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693927488191</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +364,8 @@
     <MESSAGE value="change to frontend-react-cd.yml 4" />
     <MESSAGE value="change to frontend-react-cd.yml 5" />
     <MESSAGE value="change to frontend-react-cd.yml 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to frontend-react-cd.yml 6" />
+    <MESSAGE value="frontend-react-cd.yml 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend-react-cd.yml 7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
