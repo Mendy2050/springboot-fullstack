@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to Deploy to Elastic Beanstalk 09.04">
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="change to frontend-react-cd.yml 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +118,7 @@
       <workItem from="1692969174380" duration="314000" />
       <workItem from="1692975252242" duration="14000" />
       <workItem from="1693290199565" duration="5916000" />
-      <workItem from="1693325083252" duration="34537000" />
+      <workItem from="1693325083252" duration="35272000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>
@@ -274,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693860330097</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="change to frontend-react-cd.yml">
+      <created>1693919890921</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1693919890921</updated>
+    </task>
+    <task id="LOCAL-00024" summary="change to frontend-react-cd.yml 2">
+      <created>1693920248450</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693920248450</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +323,9 @@
     <MESSAGE value="change sha to SHA 3" />
     <MESSAGE value="change to Deploy to Elastic Beanstalk" />
     <MESSAGE value="change to Deploy to Elastic Beanstalk 09.04" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to Deploy to Elastic Beanstalk 09.04" />
+    <MESSAGE value="change to frontend-react-cd.yml" />
+    <MESSAGE value="change to frontend-react-cd.yml 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to frontend-react-cd.yml 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
