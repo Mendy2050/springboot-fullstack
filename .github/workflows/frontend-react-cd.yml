@@ -42,14 +42,12 @@ jobs:
 
       - name: Docker Build and push
         run: |
-          docker buildx create --use
-          docker buildx build \
-            --platform linux/arm64 \
-            -t mendy2050/mendy-api-react:${{ steps.build-number.outputs.BUILD_NUMBER }} \
-            -t mendy2050/mendy-api-react:latest \
-            --build-arg api_base_url=http://mendy-api-env.eba-gnm3c7w7.eu-west-1.elasticbeanstalk.com:8080 \
-            --push \
-            .
+          chmod +x ../../.ci/build-publish.sh
+          USERNAME=mendy2050 \
+          REPO=mendy-api-react \
+          TAG=${{ steps.build-number.outputs.BUILD_NUMBER }} \
+          ../../.ci/build-publish.sh . \
+            --build-arg api_base_url=http://mendy-api-env.eba-gnm3c7w7.eu-west-1.elasticbeanstalk.com:8080
       
       
       - name: Send Slack Message
