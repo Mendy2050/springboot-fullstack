@@ -56,7 +56,7 @@ export default function CardWithImage({id, name, email, age, gender, imageNumber
 
                 <Box p={6}>
                     <Stack spacing={2} align={'center'} mb={5}>
-                        <Tag borderRadius={"full"}>{id}</Tag>
+                        {/*<Tag borderRadius={"full"}>{id}</Tag>*/}
                         <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
                             {name}
                         </Heading>
