@@ -9,6 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;
 
@@ -29,10 +30,15 @@ class CustomerServiceTest {
     @Mock
     private CustomerDao customerDao;
 
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
+    private final CustomerDTOMapper customerDTOMapper = new CustomerDTOMapper();
+
 
     @BeforeEach
     void setUp() {
-        underTest = new CustomerService(customerDao);
+        underTest = new CustomerService(customerDao, passwordEncoder, customerDTOMapper);
     }
 
 
@@ -53,14 +59,16 @@ class CustomerServiceTest {
     void canGetCustomer() {
         //GIVEN
         Long id =10l;
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
+        CustomerDTO expected = customerDTOMapper.apply(customer);
+
         //When
-        Customer actual = underTest.getCustomer(id);
+        CustomerDTO actual = underTest.getCustomer(id);
 
         //Then
-        assertThat(actual).isEqualTo(customer);
+        assertThat(actual).isEqualTo(expected);
     }
 
 
@@ -86,7 +94,11 @@ class CustomerServiceTest {
 
         when(customerDao.existsPersonWithEmail(email)).thenReturn(false);
 
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19, Gender.MALE);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email, "password", 19, Gender.MALE);
+
+        String passwordHash = "asdf7p9;!@#asdf";
+
+        when(passwordEncoder.encode(request.password())).thenReturn(passwordHash);
 
 
         //When
@@ -103,6 +115,7 @@ class CustomerServiceTest {
         assertThat(capturedCustomer.getName()).isEqualTo(request.name());
         assertThat(capturedCustomer.getEmail()).isEqualTo(request.email());
         assertThat(capturedCustomer.getAge()).isEqualTo(request.age());
+        assertThat(capturedCustomer.getPassword()).isEqualTo(passwordHash);
 
     }
 
@@ -113,7 +126,7 @@ class CustomerServiceTest {
         //GIVEN
         String email = "alex@gmail.com";
         when(customerDao.existsPersonWithEmail(email)).thenReturn(true);
-        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email,19, Gender.MALE);
+        CustomerRegistrationRequest request = new CustomerRegistrationRequest("Alex",email, "password", 19, Gender.MALE);
 
         //When
 
@@ -171,7 +184,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -211,7 +224,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -249,7 +262,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -290,7 +303,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -327,7 +340,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest
@@ -357,7 +370,7 @@ class CustomerServiceTest {
         Long id =10l;
 
         //2. second pre-condition of the test: can get the customer
-        Customer customer = new Customer(id,"Alex","alex@gmail.com",19, Gender.MALE);
+        Customer customer = new Customer(id,"Alex","alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
         //3. third-precondition of the test: CustomerUpdateRequest

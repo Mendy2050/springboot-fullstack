@@ -29,7 +29,7 @@ services:
 
   mendy-api-react:
     container_name: mendy-api-react
-    image: mendy2050/mendy-api-react
+    image: mendy2050/mendy-api-react:20502051
     build:
       context: frontend/React
       args:
