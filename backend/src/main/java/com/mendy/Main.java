@@ -45,13 +45,16 @@ public class Main {
 
             Gender gender = age % 2 == 0 ? Gender.MALE : Gender.FEMALE;
 
+            String email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@amigoscode.com";
             Customer customer = new Customer(
                     firstName + " " + lastName,
-                    firstName.toLowerCase() + "." + lastName.toLowerCase() + "@amigoscode.com",
-                    passwordEncoder.encode(UUID.randomUUID().toString()), age,
+                    email,
+                    passwordEncoder.encode("password"),
+                    age,
                     gender);
 
             customerRepository.save(customer);
+            System.out.println(email);
         };
     }
 

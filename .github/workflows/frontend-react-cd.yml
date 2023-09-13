@@ -68,7 +68,7 @@ jobs:
       - name: Send Slack Message
         run: >
           curl -X POST -H 'Content-type: application/json' 
-          --data '{"text":":aws: Starting deployment to Elastic Beanstalk"}' 
+          --data '{"text":":aws: Start deployment to Elastic Beanstalk"}' 
           ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Deploy to Elastic Beanstalk

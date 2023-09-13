@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="More security including exceptions, CORS, Auth Login">
+    <list default="true" id="47aa42ae-1267-49b2-853c-7b831a0858ed" name="Changes" comment="Allow /ping to have no authentication">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/frontend-react-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/frontend-react-cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/security/SecurityFilterChainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/security/SecurityFilterChainConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mendy/jwt/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mendy/jwt/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/UserProfile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/customer/CustomerCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/CreateCustomerDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/customer/CreateCustomerDrawer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/CreateCustomerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/customer/CreateCustomerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/UpdateCustomerDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/customer/UpdateCustomerDrawer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/UpdateCustomerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/customer/UpdateCustomerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/components/shared/SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/React/src/services/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/React/src/services/client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +32,7 @@
       <list>
         <option value="Record" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +90,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\23731\Desktop\demo\frontend\React\src\components\customer" />
       <recent name="C:\Users\23731\Desktop\demo" />
       <recent name="C:\Users\23731\Desktop\demo\backend" />
     </key>
@@ -168,12 +184,12 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Spring Boot.Main" />
       <item itemvalue="JUnit.CustomerIT.canUpdateCustomer" />
       <item itemvalue="JUnit.CustomerIT" />
       <item itemvalue="JUnit.AuthenticationIT.canLogin" />
       <item itemvalue="JUnit.AuthenticationIT" />
       <item itemvalue="JUnit.All in mendy-api" />
+      <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
@@ -206,7 +222,9 @@
       <workItem from="1693325083252" duration="40258000" />
       <workItem from="1693941738883" duration="93000" />
       <workItem from="1693941888824" duration="9732000" />
-      <workItem from="1693952623234" duration="52277000" />
+      <workItem from="1693952623234" duration="59558000" />
+      <workItem from="1694522482660" duration="4327000" />
+      <workItem from="1694540803495" duration="10882000" />
     </task>
     <task id="LOCAL-00001" summary="modify docker-compose.yml file">
       <created>1692562004595</created>
@@ -432,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694437605487</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Allow /ping to have no authentication">
+      <created>1694444695189</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1694444695189</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add build workflow and change backend-ci.yml" />
     <MESSAGE value="springboot backend" />
     <MESSAGE value="add build workflow" />
     <MESSAGE value="break existsPersonWithEmail" />
@@ -478,7 +502,8 @@
     <MESSAGE value="frontend-react-cd.yml 9" />
     <MESSAGE value="Dockerrun.aws.json react - remove id" />
     <MESSAGE value="More security including exceptions, CORS, Auth Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="More security including exceptions, CORS, Auth Login" />
+    <MESSAGE value="Allow /ping to have no authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow /ping to have no authentication" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
